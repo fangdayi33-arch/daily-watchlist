@@ -1,0 +1,63 @@
+name: Daily Market Feed
+
+on:
+  schedule:
+    # HK close 16:00 HKT = 08:00 UTC → run at 09:00 UTC for HK data
+    # US close 16:00 ET (夏令21:00 UTC, 冬令22:00 UTC) → run at 22:00 UTC
+    - cron: "0 9 * * 1-5"   # Mon-Fri 17:00 Beijing → HK market data
+    - cron: "0 22 * * 1-5"  # Mon-Fri 06:00 Beijing → US market + HK IPO refresh
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Data source to fetch"
+        type: choice
+        default: "all"
+        options:
+          - all
+          - us
+          - hk
+          - ipo
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch market data
+        env:
+          SOURCE: ${{ github.event.inputs.source || 'all' }}
+        run: |
+          if [ "$SOURCE" != "all" ]; then
+            python scripts/fetch_daily_feeds.py "--${SOURCE}-only"
+          else
+            python scripts/fetch_daily_feeds.py
+          fi
+
+      - name: Commit and push data
+        run: |
+          git config user.name "daily-feed-bot"
+          git config user.email "daily-feed-bot@users.noreply.github.com"
+          git add data/*.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            timestamp=$(date -u +'%Y-%m-%d %H:%M UTC')
+            git commit -m "Daily market feed: ${timestamp}"
+            git push
+          fi
