@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-08-31T16:29:25.582506+00:00",
-  "count": 3,
-  "data": [
-    {
-      "ticker": "2800",
-      "name": "TRACKER FUND",
-      "price": 26.079999923706055,
-      "change_pct": null,
-      "open": 25.959999084472656,
-      "high": 26.1200008392334,
-      "low": 25.799999237060547,
-      "volume": 798377624,
-      "market_cap": null,
-      "currency": "HKD"
-    },
-    {
-      "ticker": "2823",
-      "name": "ISHARES A50",
-      "price": 16.780000686645508,
-      "change_pct": null,
-      "open": 16.790000915527344,
-      "high": 16.799999237060547,
-      "low": 16.540000915527344,
-      "volume": 9159862,
-      "market_cap": null,
-      "currency": "HKD"
-    },
-    {
-      "ticker": "7500",
-      "name": "FI2 CSOP HSI",
-      "price": 1.6619999408721924,
-      "change_pct": null,
-      "open": 1.6779999732971191,
-      "high": 1.694000005722046,
-      "low": 1.6579999923706055,
-      "volume": 146136900,
-      "market_cap": null,
-      "currency": "HKD"
-    }
-  ],
-  "errors": "15 tickers failed: 0700.HK, 9988.HK, 3690.HK, 9999.HK, 1810.HK, 1024.HK, 9618.HK, 9888.HK, 0005.HK, 3988.HK"
+  "generated_at": "2026-09-01T00:59:11.508819+00:00",
+  "count": 0,
+  "data": [],
+  "errors": "18 tickers failed: 0700.HK, 9988.HK, 3690.HK, 9999.HK, 1810.HK, 1024.HK, 9618.HK, 9888.HK, 0005.HK, 3988.HK"
 }
