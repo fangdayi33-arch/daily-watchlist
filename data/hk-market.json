@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T13:14:08.391709+00:00",
-  "count": 17,
+  "generated_at": "2026-09-18T23:53:03.509304+00:00",
+  "count": 14,
   "data": [
     {
       "ticker": "0700",
@@ -159,42 +159,6 @@
       "currency": "HKD"
     },
     {
-      "ticker": "2800",
-      "name": "TRACKER FUND",
-      "price": 25.3799991607666,
-      "change_pct": null,
-      "open": 25.31999969482422,
-      "high": 25.5,
-      "low": 25.31999969482422,
-      "volume": 564021122,
-      "market_cap": null,
-      "currency": "HKD"
-    },
-    {
-      "ticker": "2823",
-      "name": "ISHARES A50",
-      "price": 16.489999771118164,
-      "change_pct": null,
-      "open": 16.3700008392334,
-      "high": 16.600000381469727,
-      "low": 16.3700008392334,
-      "volume": 2616000,
-      "market_cap": null,
-      "currency": "HKD"
-    },
-    {
-      "ticker": "7500",
-      "name": "FI2 CSOP HSI",
-      "price": 1.75,
-      "change_pct": null,
-      "open": 1.7640000581741333,
-      "high": 1.7640000581741333,
-      "low": 1.7380000352859497,
-      "volume": 86289800,
-      "market_cap": null,
-      "currency": "HKD"
-    },
-    {
       "ticker": "0726",
       "name": "DIT GROUP",
       "price": 0.0430000014603138,
@@ -207,5 +171,5 @@
       "currency": "HKD"
     }
   ],
-  "errors": "1 tickers failed: 0011.HK"
+  "errors": "4 tickers failed: 0011.HK, 2800.HK, 2823.HK, 7500.HK"
 }
