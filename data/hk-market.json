@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-11-10T16:39:53.281865+00:00",
-  "count": 0,
-  "data": [],
-  "errors": "18 tickers failed: 0700.HK, 9988.HK, 3690.HK, 9999.HK, 1810.HK, 1024.HK, 9618.HK, 9888.HK, 0005.HK, 3988.HK"
+  "generated_at": "2026-11-11T01:42:32.282615+00:00",
+  "count": 2,
+  "data": [
+    {
+      "ticker": "2800",
+      "name": "TRACKER FUND",
+      "price": 24.459999084472656,
+      "change_pct": null,
+      "open": 24.459999084472656,
+      "high": 24.459999084472656,
+      "low": 24.459999084472656,
+      "volume": 230000,
+      "market_cap": null,
+      "currency": "HKD"
+    },
+    {
+      "ticker": "7500",
+      "name": "FI2 CSOP HSI",
+      "price": 1.7740000486373901,
+      "change_pct": null,
+      "open": 1.7740000486373901,
+      "high": 1.7740000486373901,
+      "low": 1.7740000486373901,
+      "volume": 327200,
+      "market_cap": null,
+      "currency": "HKD"
+    }
+  ],
+  "errors": "16 tickers failed: 0700.HK, 9988.HK, 3690.HK, 9999.HK, 1810.HK, 1024.HK, 9618.HK, 9888.HK, 0005.HK, 3988.HK"
 }
