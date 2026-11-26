@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T03:56:52.564012+00:00",
-  "count": 28,
+  "generated_at": "2026-11-26T18:42:25.571620+00:00",
+  "count": 27,
   "data": [
     {
       "ticker": "SPY",
@@ -203,7 +203,7 @@
       "high": 604.9500122070312,
       "low": 548.1300048828125,
       "volume": 52470000,
-      "market_cap": 680268201984,
+      "market_cap": 682379247616,
       "currency": "USD"
     },
     {
@@ -228,18 +228,6 @@
       "low": 188.1999969482422,
       "volume": 6734500,
       "market_cap": 162303836160,
-      "currency": "USD"
-    },
-    {
-      "ticker": "NOW",
-      "name": "ServiceNow, Inc.",
-      "price": 92.16000366210938,
-      "change_pct": 0.46,
-      "open": 89.19000244140625,
-      "high": 92.80999755859375,
-      "low": 86.8499984741211,
-      "volume": 15479100,
-      "market_cap": 95654436864,
       "currency": "USD"
     },
     {
@@ -338,5 +326,6 @@
       "market_cap": 1230776565760,
       "currency": "USD"
     }
-  ]
+  ],
+  "errors": "1 tickers failed: NOW"
 }
